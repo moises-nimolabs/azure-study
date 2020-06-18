@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# create the Virtual Network
+az network vnet create --resource-group moises-playground --name mNet --address-prefixes 10.0.0.0/16 --subnet-name mSubNet --subnet-prefixes 10.0.0.0/24
+
+# create the Network Security Group
+az network nsg create -g moises-playground -n mNSG --tags secure_nsg
+
+# create the Network Interface
+az network nic create -g moises-playground -n mNIC --vnet-name mNet --subnet mSubNet --network-security-group mNSG
+    # --public-ip-address 
+ø
+az network public-ip create -g moises-playground -n mPublicIp --allocation-method Static
+    # in case of a dns domain
+    #  --dns-name mPublicIpLabel 

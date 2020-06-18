@@ -1,0 +1,30 @@
+{
+  "name": "azure-study",
+  "version": "1.0.0",
+  "description": "Azure Study",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moises-pgoncalves/azure-study.git"
+  },
+  "author": "Moises Goncalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moises-pgoncalves/azure-study/issues"
+  },
+  "homepage": "https://github.com/moises-pgoncalves/azure-study#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-dir": "^1.0.2",
+    "gulp-exec": "^5.0.0",
+    "gulp-foreach": "^0.1.0",
+    "gulp-print": "^5.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-tap": "^2.0.0"
+  },
+  "dependencies": {}
+}
